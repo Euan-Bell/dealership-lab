@@ -3,29 +3,29 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class CarTest {
-    Car car;
+public class VanTest {
+    Van van;
     Engine engine;
 
     @Before
     public void before(){
         engine = new Engine();
-        car = new Car(100, "Red", engine);
+        van = new Van(200, "White", engine);
     }
 
     @Test
     public void canGetPrice(){
-        assertEquals(100, car.getPrice(), 0.1);
+        assertEquals(200, van.getPrice(), 0.1);
     }
 
     @Test
     public void canGetColour(){
-        assertEquals("Red", car.getColour());
+        assertEquals("White", van.getColour());
     }
 
     @Test
     public void canGetEngine(){
-        assertEquals(engine, car.getEngine());
+        assertEquals(engine, van.getEngine());
     }
 
     @Test
@@ -35,6 +35,6 @@ public class CarTest {
 
     @Test
     public void canTurnEngineOn(){
-        assertEquals("Vrmmm", car.turnOnEngine());
+        assertEquals("Vrmmm", van.turnOnEngine());
     }
 }

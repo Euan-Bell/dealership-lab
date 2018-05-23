@@ -8,4 +8,20 @@ public abstract class Vehicle {
         this.colour = colour;
         this.engine = engine;
     }
+
+    public double getPrice() {
+        return this.price;
+    }
+
+    public String getColour() {
+        return this.colour;
+    }
+
+    public Engine getEngine() {
+        return this.engine;
+    }
+
+    public String turnOnEngine(){
+        return this.engine.rev();
+    }
 }
