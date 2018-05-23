@@ -16,7 +16,7 @@ public class DealershipTest {
     public void before(){
         dealer = new Dealer();
         till = new Till(500);
-        customer = new Customer();
+        customer = new Customer(800);
         vehicles = new ArrayList<>();
 
         dealership = new Dealership(dealer, till, customer, vehicles);
